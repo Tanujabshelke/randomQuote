@@ -81,7 +81,7 @@ background-color: rgb(5, 24, 32);
 
 #tweet-quote :hover {
     opacity: .6;
-    
+    cursor: pointer;
 }
 
 #new-quote {
@@ -95,4 +95,9 @@ background-color: rgb(5, 24, 32);
     border-radius: 8%;
     border: 2px solid black;
     /* margin:0rem 2rem; */
+}
+
+#new-quote:hover {
+    color:darkgray ;
+    cursor:pointer;
 }

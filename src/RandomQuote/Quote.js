@@ -4,19 +4,10 @@ import QuoteUi from "./QuoteUi";
 //const url = "https://type.fit/api/quotes";
 
 function Quote(url) {
-  const [data, setData] = useState("");
-
-  useEffect(() => {
-    const fetchData = async () => {
-      let res = await fetch("https://type.fit/api/quotes");
-
-      let response = await res.json();
-      let fData = response[2];
-      // console.log(fData.text);
-      setData(fData);
-    };
-    fetchData();
-  }, []);
+  const [data, setData] = useState({
+    text: " Arise,awake and donot stop until the goal is reached. ",
+    author: "Swami Vivekananda",
+  });
 
   const handleClick = () => {
     const fetchData = async () => {
